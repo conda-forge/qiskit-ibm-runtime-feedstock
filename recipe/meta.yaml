@@ -1,5 +1,5 @@
 {% set name = "qiskit-ibm-runtime" %}
-{% set version = "0.24.1" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 725d48b8da0d1f1baa0ffc9e9cd0571d15b3f023013aab8de1410ef86d903214
+  sha256: b140a7191f0088ca28e09259aac5e522d187b51a58d2c4ee48d94915d9897ddd
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - pydantic
+    - pydantic >=2.5.0
     - qiskit >=1.1.0
     - python >=3.8
     - requests >=2.19
