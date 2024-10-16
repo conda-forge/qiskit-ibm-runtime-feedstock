@@ -1,5 +1,5 @@
 {% set name = "qiskit-ibm-runtime" %}
-{% set version = "0.30.0" %}
+{% set version = "0.31.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c2983861ba13068670cbdbcb7ffc9312d0bf0dc070c16958916a187ec28b45d9
+  sha256: 935ceac221c5af95ba86996f77872850b7d5975d776e507b372ff8148c90a215
 
 build:
   noarch: python
