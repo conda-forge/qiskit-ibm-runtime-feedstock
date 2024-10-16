@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python <3.13  # requests_ntlm has not 3.13 build yet
 
 about:
   home: https://github.com/Qiskit/qiskit-ibm-runtime
