@@ -12,13 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python >=3.8
     - pip
-    - setuptools
+    - setuptools >=40.6.0
+    - setuptools_scm >=6.2
   run:
     - pydantic >=2.5.0,<2.10
     - qiskit >=1.1.0
