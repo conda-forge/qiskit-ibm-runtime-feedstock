@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: qiskit-ibm-runtime
-  version: 0.39.0
+  version: "0.40.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: deb36df2444bf4be5db0f827386d5286f4bdde8dbf27486190c91ce410f85aa4
+  sha256: dad30f233318e2fdeeaa632eaaa3627b9998b41f5e73a5fa1e760fae85e9e1a8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
