@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: qiskit-ibm-runtime
-  version: "0.40.1"
+  version: "0.41.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 83fd172357a28d69b3289009a724ec14d70c4367dbb5aa140ffd63aa101c3ae1
+  sha256: c4a1b79026419a911b32da802c5b6a694c23a1bbf63854205e13a6c4bbd65cd2
 
 build:
   number: 0
