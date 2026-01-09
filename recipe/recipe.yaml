@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: qiskit-ibm-runtime
-  version: 0.44.0
+  version: 0.45.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 802b24e7007212773098a605688a98bcad095e4f786dd968bdbd5b87fb2530f1
+  sha256: 54b29d6e5201b038015f20e30ab90f846a3233a53e758f405a4c5a556fadb0bb
 
 build:
   number: 0
@@ -30,10 +30,10 @@ requirements:
     - pydantic >=2.5.0
     - python >=${{ python_min }}
     - python-dateutil >=2.8.0
-    - qiskit >=1.4.1
+    - qiskit >=2.0.0
     - requests >=2.19,!=2.32.2
-    - requests_ntlm >=1.1.0
     - urllib3 >=1.21.1
+    - requests-ntlm >=1.1.0
 tests:
   - python:
       imports:
