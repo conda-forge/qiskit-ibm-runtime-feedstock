@@ -32,8 +32,8 @@ requirements:
     - python-dateutil >=2.8.0
     - qiskit >=2.0.0
     - requests >=2.19,!=2.32.2
+    - requests_ntlm >=1.1.0
     - urllib3 >=1.21.1
-    - requests-ntlm >=1.1.0
 tests:
   - python:
       imports:
