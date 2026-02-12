@@ -13,7 +13,7 @@ source:
   sha256: 54b29d6e5201b038015f20e30ab90f846a3233a53e758f405a4c5a556fadb0bb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -41,7 +41,7 @@ tests:
   - requirements:
       run:
         - pip
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
     script:
       - pip check
 
