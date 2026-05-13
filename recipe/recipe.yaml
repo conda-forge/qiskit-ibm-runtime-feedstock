@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: qiskit-ibm-runtime
-  version: 0.46.1
+  version: 0.47.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 22d0fa71ccffd9db03f19e3d05fc5da6bacdf54bb5a8347b25a275623de82645
+  sha256: 3f670cc58d52fc599f09e2f533d8c91124391ed1224987e379a677a3bf801ea6
 
 build:
   number: 0
@@ -24,19 +24,18 @@ requirements:
     - setuptools >=40.6.0
     - setuptools_scm >=6.2
   run:
-    - ibm-platform-services >=0.55.3
-    - numpy >=1.26
-    - packaging
-    - pydantic >=2.7.0
+    - ibm-platform-services >=0.61.1
+    - numpy >=1.26.2
+    - pydantic >=2.11.0
     - python >=${{ python_min }}
     - python-dateutil >=2.9.0
     - qiskit >=2.2.0
     - requests >=2.32.4
     - requests_ntlm >=1.1.0
     - urllib3 >=2.4.0
-    - pybase64 >=1.4
+    - pybase64 >=1.4.0
     - samplomatic >=0.13.0
-    - ibm-quantum-schemas >=0.5.20260320
+    - ibm-quantum-schemas >=0.7.20260419,<1
 tests:
   - python:
       imports:
