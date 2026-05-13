@@ -21,8 +21,8 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools >=40.6.0
-    - setuptools_scm >=6.2
+    - setuptools >=66.1.0
+    - setuptools-scm >=8.1.0
   run:
     - ibm-platform-services >=0.61.1
     - numpy >=1.26.2
