@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: qiskit-ibm-runtime
-  version: 0.50.0
+  version: 0.51.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 50725dcc5a556ecd2e824a678e2aa66efca9f609836e458c51dc66c5728b2aa6
+  sha256: 8873224137d4eb0e2187813252bc5e84ce73dfce7f17c954d25d51c74a6b4827
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - urllib3 >=2.4.0
     - pybase64 >=1.4.0
     - samplomatic >=0.21.0
-    - ibm-quantum-schemas >=0.12.20260921,<1
+    - ibm-quantum-schemas >=0.13.20261016,<1
     - scipy >=1.5.0
     - qiskit-mitigation >=0.1.1
 tests:
